@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WeatherApplication</string>
+    <string name="present_temperature">Temperature</string>
+    <string name="minimum_temperature">Min Temp</string>
+    <string name="maximum_temperature">Max Temp</string>
+    <string name="Humidity">Humidity</string>
+    <string name="pressure">Pressure</string>
+    <string name="Hyderabad">Hyderabad ,India</string>
+    <string name="time">Time</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="temp_info">Hottest and Coolest temperature among above cities : </string>
+    <string name="hottest">Hottest : 0 \u2103</string>
+    <string name="coolest">Coolest : 0 \u2103</string>
+    <string name="available_cities">Cities being monitored : </string>
+</resources>

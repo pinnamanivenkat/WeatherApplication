@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/weather_image"
+            android:layout_width="wrap_content"
+            android:layout_height="191dp"
+            android:src="@drawable/hyderabad"
+            android:contentDescription="City Tourist Spot"/>
+
+        <RelativeLayout
+            android:id="@+id/temperature_layout"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weather_image">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/present_temperature"
+                android:layout_marginStart="5dp"
+                android:id="@+id/temperature_image"
+                android:contentDescription="@string/present_temperature"/>
+            <TextView
+                android:id="@+id/present_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:text="@string/present_temperature"
+                android:textSize="30sp" 
+                android:layout_alignTop="@+id/temperature_image"
+                android:layout_toEndOf="@+id/temperature_image"
+                android:layout_alignBottom="@+id/temperature_image" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temperature_layout"
+            android:id="@+id/maxtemp_layout">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/max_temperature"
+                android:id="@+id/max_temp_image"
+                android:contentDescription="@string/maximum_temperature"/>
+            <TextView
+                android:id="@+id/max_temp_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/maximum_temperature"
+                android:textSize="30sp"
+                android:gravity="center_vertical"
+                android:layout_alignTop="@+id/max_temp_image"
+                android:layout_toEndOf="@+id/max_temp_image"
+                android:layout_alignBottom="@+id/max_temp_image" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/maxtemp_layout"
+            android:id="@+id/mintemp_layout">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/min_temperature"
+                android:id="@+id/min_temp_image"
+                android:contentDescription="@string/minimum_temperature"/>
+            <TextView
+                android:id="@+id/min_temp_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:text="@string/minimum_temperature"
+                android:textSize="30sp"
+                android:layout_alignTop="@+id/min_temp_image"
+                android:layout_toEndOf="@+id/min_temp_image"
+                android:layout_alignBottom="@+id/min_temp_image" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/humidity_layout"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mintemp_layout">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart= "5dp"
+                android:src="@drawable/humidity_image"
+                android:id="@+id/humidity_image"
+                android:contentDescription="@string/Humidity" />
+            <TextView
+                android:id="@+id/present_humidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:text="@string/Humidity"
+                android:textSize="30sp"
+                android:layout_alignTop="@+id/humidity_image"
+                android:layout_toEndOf="@+id/humidity_image"
+                android:layout_alignBottom="@+id/humidity_image" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pressure_layout"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/humidity_layout">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart= "5dp"
+                android:src="@drawable/pressure_icon"
+                android:id="@+id/pressure_image"
+                android:contentDescription="@string/pressure" />
+            <TextView
+                android:id="@+id/present_pressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:text="@string/pressure"
+                android:textSize="30sp"
+                android:layout_alignTop="@+id/pressure_image"
+                android:layout_toEndOf="@+id/pressure_image"
+                android:layout_alignBottom="@+id/pressure_image" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/time_layout"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pressure_layout">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart= "5dp"
+                android:src="@drawable/clock_icon"
+                android:id="@+id/time_image"
+                android:contentDescription="@string/time" />
+            <TextView
+                android:id="@+id/present_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/time"
+                android:gravity="center_vertical"
+                android:textSize="30sp"
+                android:layout_alignTop="@+id/time_image"
+                android:layout_toEndOf="@+id/time_image"
+                android:layout_alignBottom="@+id/time_image" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
